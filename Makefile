@@ -22,7 +22,7 @@ PG_VERSION_NUM := $(shell cat `$(PG_CONFIG) --includedir-server`/pg_config*.h \
 
 # set your custom C++ compler
 CUSTOM_CC = g++
-JSS  = coffee-script.js livescript.js
+JSS  = coffeescript.js livescript.js
 # .cc created from .js
 JSCS = $(JSS:.js=.cc)
 SRCS = plv8.cc plv8_type.cc plv8_func.cc plv8_param.cc $(JSCS)
